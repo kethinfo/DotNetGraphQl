@@ -1,0 +1,52 @@
+﻿
+   mutation {
+       updateCourse(id: 5, course : {name:"mutation course 11-updated", description:"mutation desc", review:4,
+        dateAdded:"2024-07-13T07:36:11.3456019Z", dateUpdated:"2024-07-13T07:36:11.3456019Z"})
+      {
+         id,
+        name,
+        description,
+        dateAdded,
+        dateUpdated
+       }
+        
+      }
+--------------------------
+
+   mutation {
+       updateCourse(id: 5, course : {name:"mutation course 11-updated", description:"mutation desc", review:4,
+        dateAdded:"2024-07-13T07:36:11.3456019Z", dateUpdated:"2024-07-13T07:36:11.3456019Z"})
+      {
+         id,
+        name,
+        description,
+        dateAdded,
+        dateUpdated
+       }
+        
+      }
+
+--------------------------
+
+query{
+  courses
+  {
+         id,
+        name,
+        description,
+        dateAdded,
+        dateUpdated
+       }
+
+}
+
+--------------------------
+
+ mutation {
+       deleteCourse(id: 5)
+  {
+    id
+  }
+      }
+
+      
